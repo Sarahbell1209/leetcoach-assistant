@@ -22,7 +22,7 @@ export function HintPanel() {
       setHint(res.hint);
       setLevel(nextLevel);
     } catch {
-      setHint("Could not reach AI endpoint. Is the backend running?");
+      setHint("无法连接助手接口，请确认后端已启动。");
     } finally {
       setLoading(false);
     }

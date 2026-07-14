@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "LeetCoach AI",
-  description: "Learn to solve LeetCode — progressive hints, spaced review, mistake book.",
+  title: "LeetCoach 助手",
+  description: "刷题学习助手 — 渐进提示、间隔复习、错题本。",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

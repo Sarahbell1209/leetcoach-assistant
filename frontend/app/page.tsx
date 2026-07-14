@@ -41,7 +41,7 @@ export default async function HomePage() {
   return (
     <main>
       <p className="pill">Personal interview lab</p>
-      <h1 className="brand">LeetCoach AI</h1>
+      <h1 className="brand">LeetCoach 助手</h1>
       <p className="tagline">
         Stay on LeetCode. We record attempts, schedule reviews, and give progressive hints —
         never spoilers first.

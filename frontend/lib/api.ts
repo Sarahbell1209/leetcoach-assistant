@@ -87,7 +87,7 @@ export const api = {
     code?: string;
     language?: string;
   }) => {
-    const res = await fetch(`${API_BASE}/api/ai/hint`, {
+    const res = await fetch(`${API_BASE}/api/assistant/hint`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(body),

@@ -14,8 +14,8 @@ from database.db import init_db
 load_dotenv(Path(__file__).parent / ".env")
 
 app = FastAPI(
-    title="LeetCoach AI",
-    description="AI-powered LeetCode learning assistant — learn to solve, don't copy solutions.",
+    title="LeetCoach 助手",
+    description="LeetCode 刷题学习助手 — 学会自己解题，而不是复制答案。",
     version="0.1.0",
 )
 
@@ -41,4 +41,4 @@ def on_startup():
 
 @app.get("/api/health")
 def health():
-    return {"status": "ok", "service": "leetcoach-ai"}
+    return {"status": "ok", "service": "leetcoach-assistant"}

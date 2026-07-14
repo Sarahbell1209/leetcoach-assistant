@@ -1,10 +1,10 @@
-# LeetCoach AI
+# LeetCoach 助手
 
-AI-powered LeetCode learning assistant that works **alongside** LeetCode — not instead of it.
+LeetCode 刷题学习助手 — 配合力扣使用，而不是取代它。
 
-Records every submission, builds a mistake book, schedules spaced reviews, and gives **progressive hints** (never spoilers first).
+自动记录每次提交，建立错题本，安排间隔复习，并提供**渐进式提示**（绝不先剧透答案）。
 
-> Learning > Statistics > AI
+> 学习 > 统计 > 助手
 
 ## Architecture
 
@@ -13,7 +13,7 @@ Chrome Extension  →  FastAPI Backend  →  SQLite
                          ↓
                   Next.js Dashboard
                          ↓
-                    OpenAI API (optional)
+                    助手提示引擎 (可选)
 ```
 
 ## Quick start
@@ -64,7 +64,7 @@ Open http://localhost:3000
 | Dashboard / streak / charts | ✅ |
 | Mistake book (auto on fail) | ✅ |
 | Spaced repetition reviews | ✅ |
-| Progressive AI hints (L1–L6) | ✅ |
+| Progressive hints (L1–L6) | ✅ |
 | Code review endpoint | ✅ |
 | Daily plan | ✅ |
 | Algorithm templates | ✅ |
@@ -74,8 +74,8 @@ Open http://localhost:3000
 - `POST /api/submissions` — record a submit  
 - `GET /api/stats/dashboard` — learning stats  
 - `GET /api/reviews/due` — due reviews  
-- `POST /api/ai/hint` — one hint level at a time  
-- `POST /api/ai/review` — post-submit code review  
+- `POST /api/assistant/hint` — one hint level at a time  
+- `POST /api/assistant/review` — post-submit code review  
 - `GET /api/plans/today` — daily plan  
 
 ## Project layout

@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "LeetCoach AI",
+  "name": "LeetCoach 助手",
   "version": "0.1.0",
-  "description": "Automatically record LeetCode submissions for spaced review and progressive hints.",
+  "description": "自动记录力扣提交，用于间隔复习与渐进提示。",
   "permissions": ["storage", "activeTab"],
   "host_permissions": [
     "https://leetcode.com/*",
@@ -24,7 +24,7 @@
   ],
   "action": {
     "default_popup": "popup.html",
-    "default_title": "LeetCoach AI"
+    "default_title": "LeetCoach 助手"
   },
   "icons": {
     "16": "icons/icon16.png",
