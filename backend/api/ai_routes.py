@@ -3,7 +3,7 @@ from fastapi import APIRouter
 from ai.coach import get_hint, review_code
 from schemas import CodeReviewRequest, CodeReviewResponse, HintRequest, HintResponse
 
-router = APIRouter(prefix="/api/ai", tags=["ai"])
+router = APIRouter(prefix="/api/assistant", tags=["assistant"])
 
 
 @router.post("/hint", response_model=HintResponse)
